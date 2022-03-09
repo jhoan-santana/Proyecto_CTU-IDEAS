@@ -1,0 +1,149 @@
+.yellow{
+   background-color:#F1AF76;
+   text-align:center;
+}
+
+.fuchsia{
+   background-color:#A484F5;
+   text-align:center;
+   text-shadow: 0 0 0.2em #F87, 0 0 0.2em #F87;
+}
+.caption{
+  text-shadow: 0 0 0.2em #F87, 0 0 0.2em #F87;
+}
+.flexLeft{
+  display:flex; 
+  flex-direction:left;
+}
+
+.navbar{
+  color: white;
+  text-align:center;
+}
+
+.breadcrumb{
+  width: 100%;
+  font-size: 15px;
+}
+
+.footer{
+   position: fixed;
+    height: 40%;
+    font-size: 2.3vw;
+}
+
+.img_principal{
+  color:#AD6000;
+  font-size: 4.3vw;
+}
+
+.flexContainer{display: flex;}
+.flexColumn{flex-direction:column;}
+
+
+.main {order:2;
+  padding: 20px;
+   width:60%;
+}
+.sidebar{width:40%;
+height: 100%;
+background:#F1AF76;
+padding;20px;
+flex-direction:left;}
+
+.sidebarLeft{order:4;}
+
+.vertical-menu {
+  text-align:center;
+  font-size: 2.3vw;
+}
+
+.vertical-menu a {
+  color: black;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.vertical-menu a:courier {
+  background-color: #FFE459;
+  color:brown;
+}
+
+.equipoC{
+   width: 90%;
+  text-align: center;
+  font-size: 1vw;
+}
+
+.galeriaC{
+  text-align: center;
+  width: 70%;
+  font-size: 1vw;
+}
+.serifa{
+ font-family: "Times New Roman", Times, serif;
+ font-size: 30px;
+}
+
+/* Barra frontal */
+body { font-family: sans-serif; }
+
+#main-menu .nav-bar { list-style:none; margin-top: 40px; }
+#main-menu .nav-bar li { display:inline; padding:0 10px; }
+
+#main-menu .nav-bar li a {
+  text-decoration: none;
+  padding-left: 25px;
+  text-transform: uppercase;
+  color: #333;
+	text-shadow: 1px 1px 1px #ccc;
+}
+
+.nav-bar .nav-button-home a { background:url("https://www.cheesetoast.co.uk/cheesepress/wp-content/uploads/2012/08/home.gif") no-repeat 0px -2px transparent; }
+
+.nav-bar .nav-button-services a { background:url("https://www.cheesetoast.co.uk/cheesepress/wp-content/uploads/2012/08/services.gif") no-repeat 0px -2px transparent; }
+
+.nav-bar .nav-button-products a { background:url("https://www.cheesetoast.co.uk/cheesepress/wp-content/uploads/2012/08/products.gif") no-repeat 0px -2px transparent; }
+
+/* Carrusel */
+@import url(https://fonts.googleapis.com/css?family=Istok+Web);
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+* {
+  box-sizing: border-box;
+}
+body, figure { 
+  margin: 0; background: #101010;
+  font-family: Istok Web, sans-serif;
+  font-weight: 100;
+}
+div#captioned-gallery { 
+  width: 100%; overflow: hidden; 
+}
+figure.slider { 
+  position: relative; width: 500%;
+  font-size: 0; animation: 30s slidy infinite; 
+}
+figure.slider figure { 
+  width: 20%; height: auto;
+  display: inline-block;  position: inherit; 
+}
+figure.slider img { width: 100%; height: auto; }
+figure.slider figure figcaption { 
+  position: absolute; bottom: 0;
+  background: rgba(0,0,0,0.4);
+  color: #fff; width: 100%;
+  font-size: 2rem; padding: .6rem; 
+}
+
+/* Icons courtesy of Thom : http://pixelb.in/assorted-pixel-perfect-14px-icon-set-286/ */

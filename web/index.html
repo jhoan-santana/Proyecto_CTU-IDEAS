@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - web</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>web</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
+    </script>
+  </head>
+ 
+  <body>
+    
+      <!-- Barra -->
+    <nav class="navbar fuchsia navbar-expand-sm justify-content-between" id="barra"> 
+      <header> <img class="img-fluid" src="https://w7.pngwing.com/pngs/951/600/png-transparent-pink-flowers-flower-color-lilium-flower.png" width="60" height="60"></header>
+     <p class="serifa">c·tú</p>
+      
+      <!-- Barra botones -->
+     <div>
+      <ul class="nav navbar-nav">
+        <li class="nav-item active">
+          <ul class = "nav navbar-nav">
+
+            <li class="nav-item">
+              <button id="registro" type="button" class= "btn btn-warning yellow" data-toggle="modal" data-target="#myModal" href="#"> Registro </button></li>
+            
+            <li class="nav-item">
+              <button id="iniciar" type="button" class="btn btn-warning" data-toggle="modal" data-target="#Modal" href="#"> Iniciar Sesion</button></li>
+            
+             <div id="cerrar" class="dropdown d-none">
+			          <a onclick ="cerrarS()" class="btn btn-warning" href="#" role="button"> Cerrar Sesion</a>
+                  <table>
+                    <tr>
+                      <td><pclass="dropdown d-none"> <span id="username"></span></p></td></tr> 
+                  </table> 
+              </div> 
+            </ul>
+          </div>
+
+       
+        </nav>   
+      <!-- Barra opciones -->
+       <nav id="main-menu">
+     <ul class="nav-bar">
+          <li class="nav-button-home"><a href="#">Home</a></li>
+          <li class="nav-button-services"><a href="#">Services</a></li>
+          <li class="nav-button-products"><a href="#">Products</a></li>
+     </ul>
+</nav>
+
+  <!-- Registro -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+           
+        <div class="modal-header yellow">
+          <h3 class="modal-title"> Registro de Usuario</h3>
+            <button type="button" class="close" data-dismiss="modal">&times</button>
+        </div>
+        
+           <!-- Registro datos -->
+        <div class="modal-body">
+           <input href=#name id="nombre" type="text" name="fname" placeholder="Nombre y Apellidos" class="form-control text-center" required><br>
+           <input id="correo" type="email" name="email" placeholder="Correo" class="form-control text-center" required><br>
+          <input id="clave" type="password" placeholder="Contraseña" class="form-control text-center" required ><br>
+          <input id="claveC" type="password" placeholder="Confirmación de la clave" class="form-control text-center" required><br>
+        </div>
+           <!-- Registro boton -->
+        <div class="modal-footer justify-content-center">
+          <button id="registro" type="submit" class="btn btn-outline-warning" data-dismiss="modal" OnClick="registrar()">Registrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+    
+  <!-- Iniciar sesion -->
+  <div class="modal" id="Modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <div class="modal-header yellow">
+          <h3 class="modal-title"> Inicio de sesion</h3>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+         <!-- Iniciar sesion datos -->
+        <div class="modal-body">
+          <input id="correoU" type="email" name="email" placeholder="Correo" class="form-control text-center" required><br>  
+          <input id="claveU" type="password" placeholder="Contraseña" class="form-control text-center" required><br><br>
+        </div>
+        
+         <!-- Iniciar sesion boton-->
+        <div class="modal-footer justify-content-center">
+          <button type="button" class="btn btn-outline-warning yellow" data-dismiss="modal" OnClick ="sesion()">Iniciar Sesion</button>
+        </div>
+      </div>
+    </div>
+  </div>
+       
+  <!-- Miga de pan -->
+  <div id="pan" class="d-none">                 
+    <ol class="breadcrumb">
+      <li><a href="#galeriaM" onclick="cargarG()">Galeria</a> / </li>
+      <li><a href="#restM" onclick="cargarR()">REST</a> / </li>
+      <li><a href="#otrosM" onclick="cargarO()"> Otros</a></li>        
+    </ol>
+  </div>
+      
+  <!-- Imagen principal, galeria -->
+      
+<base href="http://www.ctu-ideas.com/presta/">
+<div id="captioned-gallery">
+	<figure class="slider">
+		<figure>
+			<img src="90-large_default/llavero-diseno-perro.jpg">
+			<figcaption>Figura 1</figcaption>
+		</figure>
+		<figure>
+			<img src="118-large_default/pantuflas-diseno-bota-sport.jpg">
+			<figcaption>Figura 2</figcaption>
+		</figure>
+		<figure>
+			<img src="35-large_default/cenicero-con-diseno-bola-de-billar-no-8.jpg">
+			<figcaption>Figura 3</figcaption>
+		</figure>
+	</figure>
+</div>
+      
+      <!-- Caja con productos-->
+      
+      
+       
+   <!-- Contenedor principal -->    
+  <div class= "flexContainer flexColumn">
+    <div class="flexContainer">
+      <main class= "main">
+           
+        <!-- Galeria -->
+        <div class="container-fluid ">
+				 <div class="tab-pane active d-none" id="Galeria" >
+				  <h2 class="img_principal">Galeria </h2>
+           <div class="tab-content galeriaC ">		
+            <div id="demo" class="carousel slide" data-ride="carousel">
+
+              <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"</li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2" class="active"></li>
+              </ul>
+              
+              <!-- Galeria imagen1-->
+              <h6>Productos</h6>
+              <div class="carousel-inner">
+               <div class="carousel-item active">
+                <img class="img-fluid" src="http://www.ctu-ideas.com/presta/90-large_default/llavero-diseno-perro.jpg">
+                   <h6>Producto 1</h6>  
+                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur suscipit iaculis ligula et tempus. Suspendisse sed dui vel dolor suscipit rhoncus. Donec sagittis lectus vel tellus imperdiet, ac cursus purus interdum. Donec a mauris blandit, blandit sem sed, aliquam mauris. Praesent ac enim odio. Integer ac quam placerat, tincidunt magna eget, pellentesque lorem. Curabitur egestas ut lectus non convallis. Nulla facilisi. </p> </div>
+                
+                <!-- Galeria imagen2-->
+                <div class="carousel-item">
+                  <img class="img-fluid" src="http://www.ctu-ideas.com/presta/118-large_default/pantuflas-diseno-bota-sport.jpg">
+                  <h6>Producto 2</h6>
+											  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque varius congue velit, id laoreet ipsum.</p>
+                </div>
+                
+                <!-- Galeria imagen3-->
+                <div class="carousel-item">
+                  <img class="img-fluid" src="http://www.ctu-ideas.com/presta/35-large_default/cenicero-con-diseno-bola-de-billar-no-8.jpg">
+                  	<h6>Producto 3</h6>
+											  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu orci quis purus laoreet lacinia. Maecenas semper porta lacinia. Curabitur..</p>
+                </div>
+              </div>
+  
+              <a class="carousel-control-prev" href="#demo" data-slide="prev">
+               <span class="carousel-control-prev-icon">
+               </span></a>
+              
+              <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon">               
+                </span></a>
+            </div> 
+           </div>
+          </div>
+        </div>
+       
+        <!-- Rest //no funciona -->
+        <div class="container-fluid">
+				  <div class="tab-content">
+						<div class="tab-pane active d-none" id="Rest" >
+							<h2 class="img_principal">REST</h2>
+		            <input id="long" type="text" class="form-control text-center" placeholder= "Longitud" style="width:60%"><br>
+								<input id"lati" type="text" class="form-control text-center" placeholder= "Latitud" style="width:60%"><br>
+								<button OnClick="consultar()" type="submit" class="btn btn-warning">Consultar</button><br>
+                <table border=1>
+                 <tr>
+                  <td><p> <span id="respuesta2"></span></p></td></tr> 
+                </table> 
+              
+						</div>	
+           </div>     
+         </div>									
+											
+        <!-- Otros -->
+        <!-- @mediaQuery -->
+        <div class="container-fluid">
+          <div class="tab-pane active d-none" id="MediaQ">
+            <h2 class="img_principal">Equipo de trabajo</h2>
+              <div class="card-group justify-content-center equipoC">
+                
+                <!-- Equipo carta1-->
+                <div class="card" style="width:70%">
+                  <img class="card-img-top rounded-circle img-fluid" src="http://66.media.tumblr.com/3207a2a4536cef6600ed676d51134b43/tumblr_inline_nskkxbMqrx1rzgxjy_400.jpg" alt="Card image" style="width:80%">
+                    <div class="card-body">
+                      <h4 class="card-title">Persona 1</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus egestas augue nec nunc lobortis rutrum. Etiam ante purus, posuere vitae nibh ac, bibendum feugiat eros. Sed vel rhoncus est. Praesent.</p>
+                      <a href="#" class="btn btn-warning">+</a>
+                     </div>
+                  </div>
+
+                  <!-- Equipo carta2-->
+                  <div class="card" style="width:70%">
+                    <img class= "card-img-top rounded-circle img-fluid" src="http://www.exeforum.biz/desayunos/japon/images/embajador.jpg"  alt="Card image" style="width:80%">
+                  <div class="card-body">
+                    <h4 class="card-title">Persona 2</h4>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus egestas augue nec nunc lobortis rutrum. Etiam ante purus, posuere vitae nibh ac, bibendum feugiat eros. Sed vel rhoncus est. Praesent.</p>
+                    <a href="#" class="btn btn-warning">+</a>
+                   </div>
+                 </div>
+  
+                 <!-- Equipo carta3-->
+                 <div class="card" style="width:70%">
+                  <img class="card-img-top rounded-circle img-fluid " src="https://qph.fs.quoracdn.net/main-qimg-2a2c64a02804d2973464f67c5844aeec" alt="Card image" style="width:80%">
+                 <div class="card-body">
+                  <h4 class="card-title">Persona 3</h4>
+                   <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus egestas augue nec nunc lobortis rutrum. Etiam ante purus, posuere vitae nibh ac, bibendum feugiat eros. Sed vel rhoncus est. Praesent.</p>
+                   <a href="#" class="btn btn-warning">+</a>
+                </div>
+               </div>  
+              </div>
+             </div>
+            </div>   
+          </main>     
+		
+          <!-- Menu -->     
+          <aside class="sidebar sidebarLeft">     
+            <div id="menu" class="vertical-menu d-none">
+              <ul class="nav navbar-nav ">
+                <li class="nav-item active">
+                 <a class="fuchsia">Menu principal</a>
+                 <a class="nav-link yellow" href="#Galeria" onclick="cargarG()">Galeria</a> </li>
+                <a class="nav-link yellow" href="#MediaQ" onclick="cargarM()">Integrantes del grupo</a>
+                 <a class="nav-link yellow" href="#Rest" onclick="cargarR()">REST</a>
+                <a class="nav-link yellow" href="#Otros" onclick="cargarO()">Otros</a>
+                <ul>
+                  </ul>      
+              </ul> 
+             </div>
+           </aside>           
+          </div>
+    
+         <!-- Pie de pagina-->     
+        <div class="footer navbar fuchsia justify-content-center"> <div><p class="serifa"> &copy;2022 </p></div> 
+   </div>
+ </body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
