@@ -1,0 +1,913 @@
+<!DOCTYPE HTML>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="es-es"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8 ie7" lang="es-es"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9 ie8" lang="es-es"><![endif]-->
+<!--[if gt IE 8]><html class="no-js ie9" lang="es-es"><![endif]-->
+<html lang="es-es">
+
+<head>
+    <meta charset="utf-8" />
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <title>Ctú Ideas. Artículos y regalos originales sin salir de casa - C-tu</title>
+    <meta name="description" content="Ctu Ideas" />
+    <meta name="keywords" content="CTU, CTU Ideas,C-Tu Ideas, regalos novedosos,domicilios" />
+    <meta name="generator" content="PrestaShop" />
+    <meta name="robots" content="index,follow" />
+    <meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=1.6, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="icon" type="image/vnd.microsoft.icon" href="/presta/img/favicon.ico?1604601070" />
+    <link rel="shortcut icon" type="image/x-icon" href="/presta/img/favicon.ico?1604601070" />
+    <link rel="stylesheet" href="./css/styleCtu.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,600&amp;subset=latin,latin-ext" type="text/css" media="all" />
+    <!--[if IE 8]> 
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> 
+<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script> <![endif]-->
+</head>
+
+<body id="index" class="index show-left-column show-right-column lang_es">
+    <div id="page">
+        <div class="header-container">
+            <header id="header">
+                <div class="nav">
+                    <div class="container">
+                        <div class="row">
+                            <nav>
+                                <div class="header_user_info"> <a class="login" href="http://www.ctu-ideas.com/presta/my-account" rel="nofollow" title="Acceda a su cuenta de cliente"> Iniciar sesión </a></div>
+                                <div id="contact-link"> <a href="http://www.ctu-ideas.com/presta/contact-us" title="Contáctanos">Contáctanos</a></div> <span class="shop-phone"> <i class="icon-phone"></i>Llámanos <strong>(57) 301 7830168</strong> </span></nav>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="container">
+                        <div class="row">
+                            <div id="header_logo">
+                                <a href="http://www.ctu-ideas.com/presta/" title="C-tu"> <img class="logo img-responsive" src="http://www.ctu-ideas.com/presta/img/my-store-logo-1499372872.jpg" alt="C-tu" width="142" height="67" /> </a>
+                            </div>
+                            <div id="search_block_top" class="col-sm-4 clearfix">
+                                <form id="searchbox" method="get" action="//www.ctu-ideas.com/presta/search"> <input type="hidden" name="controller" value="search" /> <input type="hidden" name="orderby" value="position" /> <input type="hidden" name="orderway" value="desc" /> <input class="search_query form-control" type="text"
+                                        id="search_query_top" name="search_query" placeholder="Buscar" value="" /> <button type="submit" name="submit_search" class="btn btn-default button-search"> <span>Buscar</span> </button></form>
+                            </div>
+                            <div class="col-sm-4 clearfix">
+                                <div class="shopping_cart">
+                                    <a href="http://www.ctu-ideas.com/presta/order" title="Ver mi carrito de compra" rel="nofollow"> <b>Carrito</b> <span class="ajax_cart_quantity unvisible">0</span> <span class="ajax_cart_product_txt unvisible">Producto</span> <span class="ajax_cart_product_txt_s unvisible">Productos</span> <span class="ajax_cart_total unvisible"> </span>                                        <span class="ajax_cart_no_product">vacío</span> </a>
+                                    <div class="cart_block block exclusive">
+                                        <div class="block_content">
+                                            <div class="cart_block_list">
+                                                <p class="cart_block_no_products"> Ningún producto</p>
+                                                <div class="cart-prices">
+                                                    <div class="cart-prices-line first-line"> <span class="price cart_block_shipping_cost ajax_cart_shipping_cost unvisible"> A determinar </span> <span class="unvisible"> Transporte </span></div>
+                                                    <div class="cart-prices-line"> <span class="price cart_block_tax_cost ajax_cart_tax_cost">$ 0</span> <span>Valor del IVA</span></div>
+                                                    <div class="cart-prices-line last-line"> <span class="price cart_block_total ajax_block_cart_total">$ 0</span> <span>Total</span></div>
+                                                    <p> Precios con IVA incluido</p>
+                                                </div>
+                                                <p class="cart-buttons">
+                                                    <a id="button_order_cart" class="btn btn-default button button-small" href="http://www.ctu-ideas.com/presta/order" title="Confirmar" rel="nofollow"> <span> Confirmar<i class="icon-chevron-right right"></i> </span> </a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="layer_cart">
+                                <div class="clearfix">
+                                    <div class="layer_cart_product col-xs-12 col-md-6"> <span class="cross" title="Cerrar Ventana"></span> <span class="title"> <i class="icon-check"></i>Producto añadido correctamente a tu carrito de la compra </span>
+                                        <div class="product-image-container layer_cart_img"></div>
+                                        <div class="layer_cart_product_info"> <span id="layer_cart_product_title" class="product-name"></span> <span id="layer_cart_product_attributes"></span>
+                                            <div> <strong class="dark">Cantidad</strong> <span id="layer_cart_product_quantity"></span></div>
+                                            <div> <strong class="dark">Total</strong> <span id="layer_cart_product_price"></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="layer_cart_cart col-xs-12 col-md-6"> <span class="title"> <span class="ajax_cart_product_txt_s unvisible"> Hay <span class="ajax_cart_quantity">0</span> artículos en su carrito. </span> <span class="ajax_cart_product_txt "> Hay 1 artículo en su carrito. </span>                                        </span>
+                                        <div class="layer_cart_row"> <strong class="dark"> Total productos: (IVA Incluido) </strong> <span class="ajax_block_products_total"> </span></div>
+                                        <div class="layer_cart_row"> <strong class="dark unvisible"> Total envío:&nbsp;(IVA Incluido) </strong> <span class="ajax_cart_shipping_cost unvisible"> A determinar </span></div>
+                                        <div class="layer_cart_row"> <strong class="dark">Valor del IVA</strong> <span class="price cart_block_tax_cost ajax_cart_tax_cost">$ 0</span></div>
+                                        <div class="layer_cart_row"> <strong class="dark"> Total (IVA Incluido) </strong> <span class="ajax_block_cart_total"> </span></div>
+                                        <div class="button-container"> <span class="continue btn btn-default button exclusive-medium" title="Seguir comprando"> <span> <i class="icon-chevron-left left"></i>Seguir comprando </span> </span>
+                                            <a class="btn btn-default button button-medium" href="http://www.ctu-ideas.com/presta/order" title="Ir a la caja" rel="nofollow"> <span> Ir a la caja<i class="icon-chevron-right right"></i> </span> </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="crossseling"></div>
+                            </div>
+                            <div class="layer_cart_overlay"></div>
+                            <div id="block_top_menu" class="sf-contener clearfix col-lg-12">
+                                <div class="cat-title">Menu</div>
+                                <ul class="sf-menu clearfix menu-content">
+                                    <li><a href="http://www.ctu-ideas.com/presta/18-de-casa" title="De Casa">De Casa</a></li>
+                                    <li><a href="http://www.ctu-ideas.com/presta/19-con-estilo" title="Con Estilo">Con Estilo</a></li>
+                                    <li><a href="http://www.ctu-ideas.com/presta/20-de-papel" title="De Papel">De Papel</a></li>
+                                    <li><a href="http://www.ctu-ideas.com/presta/21-hecho-para-ti" title="Hecho para tí">Hecho para tí</a></li>
+                                    <li><a href="http://www.ctu-ideas.com/presta/23-todo" title="Todo">Todo</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="columns-container">
+            <div id="columns" class="container">
+                <div id="slider_row" class="row">
+                    <div id="top_column" class="center_column col-xs-12 col-sm-12">
+                        <div id="homepage-slider">
+                            <ul id="homeslider" style="max-height:120px;">
+                                <li class="homeslider-container">
+                                    <a href="http://www.ctu-ideas.com/" title="Sin tiempo"> <img src="http://www.ctu-ideas.com/presta/modules/homeslider/images/1e8599e7fd467b3afb662cbf29c0ed6825b4b645_todos home.png" width="1169" height="120" alt="Sin tiempo" /> </a>
+                                </li>
+                                <li class="homeslider-container">
+                                    <a href="www.ctu-ideas.com" title="Regalos sin salir de casa"> <img src="http://www.ctu-ideas.com/presta/modules/homeslider/images/80cbad0b1b316412b3da6dd875c7c6c1923878d6_21.png" width="1169" height="120" alt="Regalos sin salir de casa" /> </a>
+                                </li>
+                                <li class="homeslider-container">
+                                    <a href="www.ctu-ideas.com" title="Regala con el corazón"> <img src="http://www.ctu-ideas.com/presta/modules/homeslider/images/36689bda6b2e3dc3694c1aa83ce0a125a7ac44dd_20.png" width="1169" height="120" alt="Regala con el coraz&oacute;n" /> </a>
+                                </li>
+                                <li class="homeslider-container">
+                                    <a href="http://www.ctu-ideas.com/" title="ctu"> <img src="http://www.ctu-ideas.com/presta/modules/homeslider/images/541ea08450825139e994303461cbc3bb524b7121_abril.png" width="1169" height="120" alt="ctu" /> </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="center_column" class="center_column col-xs-12 col-sm-12">
+                        <ul id="home-page-tabs" class="nav nav-tabs clearfix">
+                            <li><a data-toggle="tab" href="#homefeatured" class="homefeatured">Populares</a></li>
+                            <li><a data-toggle="tab" href="#blockbestsellers" class="blockbestsellers">Los más vendidos</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <ul id="homefeatured" class="product_list grid row homefeatured tab-pane">
+                                <li class="ajax_block_product col-xs-12 col-sm-4 col-md-3 first-in-line first-item-of-tablet-line first-item-of-mobile-line">
+                                    <div class="product-container" itemscope itemtype="https://schema.org/Product">
+                                        <div class="left-block">
+                                            <div class="product-image-container">
+                                                <a class="product_img_link" href="http://www.ctu-ideas.com/presta/con-estilo/84-estuche-para-lentes-de-contacto.html" title="Estuche para lentes de contacto" itemprop="url"> <img class="replace-2x img-responsive" src="http://www.ctu-ideas.com/presta/330-home_default/estuche-para-lentes-de-contacto.jpg" alt="Estuche para lentes de contacto" title="Estuche para lentes de contacto"
+                                                        width="250" height="250" itemprop="image" /> </a>
+                                                <div class="quick-view-wrapper-mobile">
+                                                    <a class="quick-view-mobile" href="http://www.ctu-ideas.com/presta/con-estilo/84-estuche-para-lentes-de-contacto.html" rel="http://www.ctu-ideas.com/presta/con-estilo/84-estuche-para-lentes-de-contacto.html">
+                                                        <i class="icon-eye-open"></i> </a>
+                                                </div>
+                                                <a class="quick-view" href="http://www.ctu-ideas.com/presta/con-estilo/84-estuche-para-lentes-de-contacto.html" rel="http://www.ctu-ideas.com/presta/con-estilo/84-estuche-para-lentes-de-contacto.html"> <span>Vista r&aacute;pida</span> </a>
+                                                <div class="content_price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"> <span itemprop="price" class="price product-price"> $ 17.000 </span>
+                                                    <meta itemprop="priceCurrency" content="COP" /> <span class="unvisible"><link itemprop="availability" href="https://schema.org/InStock" />Disponible </span></div>
+                                            </div>
+                                        </div>
+                                        <div class="right-block">
+                                            <h5 itemprop="name"> <a class="product-name" href="http://www.ctu-ideas.com/presta/con-estilo/84-estuche-para-lentes-de-contacto.html" title="Estuche para lentes de contacto" itemprop="url"> Estuche para lentes de contacto </a></h5>
+                                            <p class="product-desc" itemprop="description"> Estuche para lentes de contacto con diseño de emoji.&nbsp;</p>
+                                            <div class="content_price"> <span class="price product-price"> $ 17.000 </span></div>
+                                            <div class="button-container">
+                                                <a class="button ajax_add_to_cart_button btn btn-default" href="http://www.ctu-ideas.com/presta/cart?add=1&amp;id_product=84&amp;ipa=46454&amp;token=a16a0480b8c47eff2101b6fd2fd87d65" rel="nofollow" title="A&ntilde;adir al carrito" data-id-product-attribute="46454"
+                                                    data-id-product="84" data-minimal_quantity="1"> <span>A&ntilde;adir al carrito</span> </a>
+                                                <a class="button lnk_view btn btn-default" href="http://www.ctu-ideas.com/presta/con-estilo/84-estuche-para-lentes-de-contacto.html" title="Ver"> <span>Ver</span> </a>
+                                            </div>
+                                            <div class="product-flags"></div> <span class="availability"> <span class=" label-success"> Disponible </span> </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="ajax_block_product col-xs-12 col-sm-4 col-md-3 last-item-of-mobile-line">
+                                    <div class="product-container" itemscope itemtype="https://schema.org/Product">
+                                        <div class="left-block">
+                                            <div class="product-image-container">
+                                                <a class="product_img_link" href="http://www.ctu-ideas.com/presta/con-estilo/34-llavero-diseno-perro.html" title="Llavero, diseño perro." itemprop="url"> <img class="replace-2x img-responsive" src="http://www.ctu-ideas.com/presta/90-home_default/llavero-diseno-perro.jpg" alt="Llavero, diseño perro." title="Llavero, diseño perro." width="250" height="250"
+                                                        itemprop="image" /> </a>
+                                                <div class="quick-view-wrapper-mobile">
+                                                    <a class="quick-view-mobile" href="http://www.ctu-ideas.com/presta/con-estilo/34-llavero-diseno-perro.html" rel="http://www.ctu-ideas.com/presta/con-estilo/34-llavero-diseno-perro.html"> <i class="icon-eye-open"></i> </a>
+                                                </div>
+                                                <a class="quick-view" href="http://www.ctu-ideas.com/presta/con-estilo/34-llavero-diseno-perro.html" rel="http://www.ctu-ideas.com/presta/con-estilo/34-llavero-diseno-perro.html"> <span>Vista r&aacute;pida</span> </a>
+                                                <div class="content_price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"> <span itemprop="price" class="price product-price"> $ 20.000 </span>
+                                                    <meta itemprop="priceCurrency" content="COP" /> <span class="unvisible"><link itemprop="availability" href="https://schema.org/InStock" />Disponible </span></div>
+                                            </div>
+                                        </div>
+                                        <div class="right-block">
+                                            <h5 itemprop="name"> <a class="product-name" href="http://www.ctu-ideas.com/presta/con-estilo/34-llavero-diseno-perro.html" title="Llavero, diseño perro." itemprop="url"> Llavero, diseño perro. </a></h5>
+                                            <p class="product-desc" itemprop="description">
+                                                Llavero con forma de perro, en color negro.Tiene sonido y luz.</p>
+                                            <div class="content_price"> <span class="price product-price"> $ 20.000 </span></div>
+                                            <div class="button-container">
+                                                <a class="button ajax_add_to_cart_button btn btn-default" href="http://www.ctu-ideas.com/presta/cart?add=1&amp;id_product=34&amp;token=a16a0480b8c47eff2101b6fd2fd87d65" rel="nofollow" title="A&ntilde;adir al carrito" data-id-product-attribute="0" data-id-product="34"
+                                                    data-minimal_quantity="1"> <span>A&ntilde;adir al carrito</span> </a>
+                                                <a class="button lnk_view btn btn-default" href="http://www.ctu-ideas.com/presta/con-estilo/34-llavero-diseno-perro.html" title="Ver"> <span>Ver</span> </a>
+                                            </div>
+                                            <div class="product-flags"></div> <span class="availability"> <span class=" label-success"> Disponible </span> </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="ajax_block_product col-xs-12 col-sm-4 col-md-3 last-item-of-tablet-line first-item-of-mobile-line">
+                                    <div class="product-container" itemscope itemtype="https://schema.org/Product">
+                                        <div class="left-block">
+                                            <div class="product-image-container">
+                                                <a class="product_img_link" href="http://www.ctu-ideas.com/presta/con-estilo/50-guarda-cable-diseno-smile.html" title="Guarda cable, diseño Carita feliz." itemprop="url"> <img class="replace-2x img-responsive" src="http://www.ctu-ideas.com/presta/142-home_default/guarda-cable-diseno-smile.jpg" alt="Guarda cable, diseño Carita feliz." title="Guarda cable, diseño Carita feliz."
+                                                        width="250" height="250" itemprop="image" /> </a>
+                                                <div class="quick-view-wrapper-mobile">
+                                                    <a class="quick-view-mobile" href="http://www.ctu-ideas.com/presta/con-estilo/50-guarda-cable-diseno-smile.html" rel="http://www.ctu-ideas.com/presta/con-estilo/50-guarda-cable-diseno-smile.html"> <i class="icon-eye-open"></i> </a>
+                                                </div>
+                                                <a class="quick-view" href="http://www.ctu-ideas.com/presta/con-estilo/50-guarda-cable-diseno-smile.html" rel="http://www.ctu-ideas.com/presta/con-estilo/50-guarda-cable-diseno-smile.html"> <span>Vista r&aacute;pida</span> </a>
+                                                <div class="content_price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"> <span itemprop="price" class="price product-price"> $ 6.000 </span>
+                                                    <meta itemprop="priceCurrency" content="COP" /> <span class="unvisible"><link itemprop="availability" href="https://schema.org/InStock" />Disponible </span></div>
+                                            </div>
+                                        </div>
+                                        <div class="right-block">
+                                            <h5 itemprop="name"> <a class="product-name" href="http://www.ctu-ideas.com/presta/con-estilo/50-guarda-cable-diseno-smile.html" title="Guarda cable, diseño Carita feliz." itemprop="url"> Guarda cable, diseño Carita feliz. </a></h5>
+                                            <p class="product-desc" itemprop="description"> Recoge cable carita feliz, especial para audífonos. Set x 2 unidades.</p>
+                                            <div class="content_price"> <span class="price product-price"> $ 6.000 </span></div>
+                                            <div class="button-container">
+                                                <a class="button ajax_add_to_cart_button btn btn-default" href="http://www.ctu-ideas.com/presta/cart?add=1&amp;id_product=50&amp;token=a16a0480b8c47eff2101b6fd2fd87d65" rel="nofollow" title="A&ntilde;adir al carrito" data-id-product-attribute="0" data-id-product="50"
+                                                    data-minimal_quantity="1"> <span>A&ntilde;adir al carrito</span> </a>
+                                                <a class="button lnk_view btn btn-default" href="http://www.ctu-ideas.com/presta/con-estilo/50-guarda-cable-diseno-smile.html" title="Ver"> <span>Ver</span> </a>
+                                            </div>
+                                            <div class="product-flags"></div> <span class="availability"> <span class=" label-success"> Disponible </span> </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="ajax_block_product col-xs-12 col-sm-4 col-md-3 last-in-line first-item-of-tablet-line last-item-of-mobile-line">
+                                    <div class="product-container" itemscope itemtype="https://schema.org/Product">
+                                        <div class="left-block">
+                                            <div class="product-image-container">
+                                                <a class="product_img_link" href="http://www.ctu-ideas.com/presta/con-estilo/42-llavero-con-diseno-de-gato.html" title="Llavero con diseño de gato." itemprop="url"> <img class="replace-2x img-responsive" src="http://www.ctu-ideas.com/presta/126-home_default/llavero-con-diseno-de-gato.jpg" alt="Llavero con diseño de gato." title="Llavero con diseño de gato." width="250"
+                                                        height="250" itemprop="image" /> </a>
+                                                <div class="quick-view-wrapper-mobile">
+                                                    <a class="quick-view-mobile" href="http://www.ctu-ideas.com/presta/con-estilo/42-llavero-con-diseno-de-gato.html" rel="http://www.ctu-ideas.com/presta/con-estilo/42-llavero-con-diseno-de-gato.html"> <i class="icon-eye-open"></i> </a>
+                                                </div>
+                                                <a class="quick-view" href="http://www.ctu-ideas.com/presta/con-estilo/42-llavero-con-diseno-de-gato.html" rel="http://www.ctu-ideas.com/presta/con-estilo/42-llavero-con-diseno-de-gato.html"> <span>Vista r&aacute;pida</span> </a>
+                                                <div class="content_price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"> <span itemprop="price" class="price product-price"> $ 20.000 </span>
+                                                    <meta itemprop="priceCurrency" content="COP" /> <span class="unvisible"><link itemprop="availability" href="https://schema.org/InStock" />Disponible </span></div>
+                                            </div>
+                                        </div>
+                                        <div class="right-block">
+                                            <h5 itemprop="name"> <a class="product-name" href="http://www.ctu-ideas.com/presta/con-estilo/42-llavero-con-diseno-de-gato.html" title="Llavero con diseño de gato." itemprop="url"> Llavero con diseño de gato. </a></h5>
+                                            <p class="product-desc" itemprop="description"> Llavero en forma de gato, con sonido.</p>
+                                            <div class="content_price"> <span class="price product-price"> $ 20.000 </span></div>
+                                            <div class="button-container">
+                                                <a class="button ajax_add_to_cart_button btn btn-default" href="http://www.ctu-ideas.com/presta/cart?add=1&amp;id_product=42&amp;ipa=20564&amp;token=a16a0480b8c47eff2101b6fd2fd87d65" rel="nofollow" title="A&ntilde;adir al carrito" data-id-product-attribute="20564"
+                                                    data-id-product="42" data-minimal_quantity="1"> <span>A&ntilde;adir al carrito</span> </a>
+                                                <a class="button lnk_view btn btn-default" href="http://www.ctu-ideas.com/presta/con-estilo/42-llavero-con-diseno-de-gato.html" title="Ver"> <span>Ver</span> </a>
+                                            </div>
+                                            <div class="product-flags"></div> <span class="availability"> <span class=" label-success"> Disponible </span> </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="ajax_block_product col-xs-12 col-sm-4 col-md-3 first-in-line first-item-of-mobile-line">
+                                    <div class="product-container" itemscope itemtype="https://schema.org/Product">
+                                        <div class="left-block">
+                                            <div class="product-image-container">
+                                                <a class="product_img_link" href="http://www.ctu-ideas.com/presta/con-estilo/33-llavero-diseno-moto.html" title="Llavero, diseño moto." itemprop="url"> <img class="replace-2x img-responsive" src="http://www.ctu-ideas.com/presta/88-home_default/llavero-diseno-moto.jpg" alt="Llavero, diseño moto." title="Llavero, diseño moto." width="250" height="250" itemprop="image"
+                                                    /> </a>
+                                                <div class="quick-view-wrapper-mobile">
+                                                    <a class="quick-view-mobile" href="http://www.ctu-ideas.com/presta/con-estilo/33-llavero-diseno-moto.html" rel="http://www.ctu-ideas.com/presta/con-estilo/33-llavero-diseno-moto.html"> <i class="icon-eye-open"></i> </a>
+                                                </div>
+                                                <a class="quick-view" href="http://www.ctu-ideas.com/presta/con-estilo/33-llavero-diseno-moto.html" rel="http://www.ctu-ideas.com/presta/con-estilo/33-llavero-diseno-moto.html"> <span>Vista r&aacute;pida</span> </a>
+                                                <div class="content_price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"> <span itemprop="price" class="price product-price"> $ 20.000 </span>
+                                                    <meta itemprop="priceCurrency" content="COP" /> <span class="unvisible"><link itemprop="availability" href="https://schema.org/InStock" />Disponible </span></div>
+                                            </div>
+                                        </div>
+                                        <div class="right-block">
+                                            <h5 itemprop="name"> <a class="product-name" href="http://www.ctu-ideas.com/presta/con-estilo/33-llavero-diseno-moto.html" title="Llavero, diseño moto." itemprop="url"> Llavero, diseño moto. </a></h5>
+                                            <p class="product-desc" itemprop="description">
+                                                Llavero en forma de moto, con sonido.</p>
+                                            <div class="content_price"> <span class="price product-price"> $ 20.000 </span></div>
+                                            <div class="button-container">
+                                                <a class="button ajax_add_to_cart_button btn btn-default" href="http://www.ctu-ideas.com/presta/cart?add=1&amp;id_product=33&amp;ipa=20547&amp;token=a16a0480b8c47eff2101b6fd2fd87d65" rel="nofollow" title="A&ntilde;adir al carrito" data-id-product-attribute="20547"
+                                                    data-id-product="33" data-minimal_quantity="1"> <span>A&ntilde;adir al carrito</span> </a>
+                                                <a class="button lnk_view btn btn-default" href="http://www.ctu-ideas.com/presta/con-estilo/33-llavero-diseno-moto.html" title="Ver"> <span>Ver</span> </a>
+                                            </div>
+                                            <div class="product-flags"></div> <span class="availability"> <span class=" label-success"> Disponible </span> </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="ajax_block_product col-xs-12 col-sm-4 col-md-3 last-item-of-tablet-line last-item-of-mobile-line">
+                                    <div class="product-container" itemscope itemtype="https://schema.org/Product">
+                                        <div class="left-block">
+                                            <div class="product-image-container">
+                                                <a class="product_img_link" href="http://www.ctu-ideas.com/presta/de-casa/11-iman-para-la-nevera-con-diseno-de-marco-para-foto-x-2.html" title="Imán para la nevera, con diseño de marco para foto x 2" itemprop="url">
+                                                    <img class="replace-2x img-responsive" src="http://www.ctu-ideas.com/presta/144-home_default/iman-para-la-nevera-con-diseno-de-marco-para-foto-x-2.jpg" alt="Imán para la nevera, con diseño de marco para foto." title="Imán para la nevera, con diseño de marco para foto."
+                                                        width="250" height="250" itemprop="image" /> </a>
+                                                <div class="quick-view-wrapper-mobile">
+                                                    <a class="quick-view-mobile" href="http://www.ctu-ideas.com/presta/de-casa/11-iman-para-la-nevera-con-diseno-de-marco-para-foto-x-2.html" rel="http://www.ctu-ideas.com/presta/de-casa/11-iman-para-la-nevera-con-diseno-de-marco-para-foto-x-2.html">
+                                                        <i class="icon-eye-open"></i> </a>
+                                                </div>
+                                                <a class="quick-view" href="http://www.ctu-ideas.com/presta/de-casa/11-iman-para-la-nevera-con-diseno-de-marco-para-foto-x-2.html" rel="http://www.ctu-ideas.com/presta/de-casa/11-iman-para-la-nevera-con-diseno-de-marco-para-foto-x-2.html">
+                                                    <span>Vista r&aacute;pida</span> </a>
+                                                <div class="content_price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"> <span itemprop="price" class="price product-price"> $ 15.000 </span>
+                                                    <meta itemprop="priceCurrency" content="COP" /> <span class="unvisible"><link itemprop="availability" href="https://schema.org/InStock" />Disponible </span></div>
+                                            </div>
+                                        </div>
+                                        <div class="right-block">
+                                            <h5 itemprop="name"> <a class="product-name" href="http://www.ctu-ideas.com/presta/de-casa/11-iman-para-la-nevera-con-diseno-de-marco-para-foto-x-2.html" title="Imán para la nevera, con diseño de marco para foto x 2" itemprop="url"> Imán para la nevera, con diseño de marco... </a></h5>
+                                            <p class="product-desc" itemprop="description"> Imán para la nevera, con marco para foto en forma de negativo. Incluye 2 unidades.</p>
+                                            <div class="content_price"> <span class="price product-price"> $ 15.000 </span></div>
+                                            <div class="button-container">
+                                                <a class="button ajax_add_to_cart_button btn btn-default" href="http://www.ctu-ideas.com/presta/cart?add=1&amp;id_product=11&amp;token=a16a0480b8c47eff2101b6fd2fd87d65" rel="nofollow" title="A&ntilde;adir al carrito" data-id-product-attribute="0" data-id-product="11"
+                                                    data-minimal_quantity="1"> <span>A&ntilde;adir al carrito</span> </a>
+                                                <a class="button lnk_view btn btn-default" href="http://www.ctu-ideas.com/presta/de-casa/11-iman-para-la-nevera-con-diseno-de-marco-para-foto-x-2.html" title="Ver">
+                                                    <span>Ver</span> </a>
+                                            </div>
+                                            <div class="product-flags"></div> <span class="availability"> <span class=" label-success"> Disponible </span> </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="ajax_block_product col-xs-12 col-sm-4 col-md-3 first-item-of-tablet-line first-item-of-mobile-line">
+                                    <div class="product-container" itemscope itemtype="https://schema.org/Product">
+                                        <div class="left-block">
+                                            <div class="product-image-container">
+                                                <a class="product_img_link" href="http://www.ctu-ideas.com/presta/con-estilo/40-pantuflas-diseno-bota-sport.html" title="Pantuflas, diseño bota sport." itemprop="url"> <img class="replace-2x img-responsive" src="http://www.ctu-ideas.com/presta/118-home_default/pantuflas-diseno-bota-sport.jpg" alt="Pantuflas, diseño bota sport." title="Pantuflas, diseño bota sport." width="250"
+                                                        height="250" itemprop="image" /> </a>
+                                                <div class="quick-view-wrapper-mobile">
+                                                    <a class="quick-view-mobile" href="http://www.ctu-ideas.com/presta/con-estilo/40-pantuflas-diseno-bota-sport.html" rel="http://www.ctu-ideas.com/presta/con-estilo/40-pantuflas-diseno-bota-sport.html"> <i class="icon-eye-open"></i> </a>
+                                                </div>
+                                                <a class="quick-view" href="http://www.ctu-ideas.com/presta/con-estilo/40-pantuflas-diseno-bota-sport.html" rel="http://www.ctu-ideas.com/presta/con-estilo/40-pantuflas-diseno-bota-sport.html"> <span>Vista r&aacute;pida</span> </a>
+                                                <div class="content_price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"> <span itemprop="price" class="price product-price"> $ 88.000 </span>
+                                                    <meta itemprop="priceCurrency" content="COP" /> <span class="unvisible"><link itemprop="availability" href="https://schema.org/InStock" />Disponible </span></div>
+                                            </div>
+                                        </div>
+                                        <div class="right-block">
+                                            <h5 itemprop="name"> <a class="product-name" href="http://www.ctu-ideas.com/presta/con-estilo/40-pantuflas-diseno-bota-sport.html" title="Pantuflas, diseño bota sport." itemprop="url"> Pantuflas, diseño bota sport. </a></h5>
+                                            <p class="product-desc" itemprop="description"> Pantuflas con diseño de botas, ideal para estar cómodo en tu casa.</p>
+                                            <div class="content_price"> <span class="price product-price"> $ 88.000 </span></div>
+                                            <div class="button-container">
+                                                <a class="button ajax_add_to_cart_button btn btn-default" href="http://www.ctu-ideas.com/presta/cart?add=1&amp;id_product=40&amp;ipa=20559&amp;token=a16a0480b8c47eff2101b6fd2fd87d65" rel="nofollow" title="A&ntilde;adir al carrito" data-id-product-attribute="20559"
+                                                    data-id-product="40" data-minimal_quantity="1"> <span>A&ntilde;adir al carrito</span> </a>
+                                                <a class="button lnk_view btn btn-default" href="http://www.ctu-ideas.com/presta/con-estilo/40-pantuflas-diseno-bota-sport.html" title="Ver"> <span>Ver</span> </a>
+                                            </div>
+                                            <div class="product-flags"></div> <span class="availability"> <span class=" label-success"> Disponible </span> </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="ajax_block_product col-xs-12 col-sm-4 col-md-3 last-in-line last-item-of-mobile-line">
+                                    <div class="product-container" itemscope itemtype="https://schema.org/Product">
+                                        <div class="left-block">
+                                            <div class="product-image-container">
+                                                <a class="product_img_link" href="http://www.ctu-ideas.com/presta/con-estilo/45-organizador-de-cartera-x-2.html" title="Organizador de cartera x 2." itemprop="url"> <img class="replace-2x img-responsive" src="http://www.ctu-ideas.com/presta/134-home_default/organizador-de-cartera-x-2.jpg" alt="Organizador de cartera." title="Organizador de cartera." width="250" height="250"
+                                                        itemprop="image" /> </a>
+                                                <div class="quick-view-wrapper-mobile">
+                                                    <a class="quick-view-mobile" href="http://www.ctu-ideas.com/presta/con-estilo/45-organizador-de-cartera-x-2.html" rel="http://www.ctu-ideas.com/presta/con-estilo/45-organizador-de-cartera-x-2.html"> <i class="icon-eye-open"></i> </a>
+                                                </div>
+                                                <a class="quick-view" href="http://www.ctu-ideas.com/presta/con-estilo/45-organizador-de-cartera-x-2.html" rel="http://www.ctu-ideas.com/presta/con-estilo/45-organizador-de-cartera-x-2.html"> <span>Vista r&aacute;pida</span> </a>
+                                                <div class="content_price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"> <span itemprop="price" class="price product-price"> $ 45.000 </span>
+                                                    <meta itemprop="priceCurrency" content="COP" /> <span class="unvisible"><link itemprop="availability" href="https://schema.org/InStock" />Disponible </span></div>
+                                            </div>
+                                        </div>
+                                        <div class="right-block">
+                                            <h5 itemprop="name"> <a class="product-name" href="http://www.ctu-ideas.com/presta/con-estilo/45-organizador-de-cartera-x-2.html" title="Organizador de cartera x 2." itemprop="url"> Organizador de cartera x 2. </a></h5>
+                                            <p class="product-desc" itemprop="description"> Organizadores de cartera. Incluye 2 unidades de diferente tamaño; grande y mediano.</p>
+                                            <div class="content_price"> <span class="price product-price"> $ 45.000 </span></div>
+                                            <div class="button-container">
+                                                <a class="button ajax_add_to_cart_button btn btn-default" href="http://www.ctu-ideas.com/presta/cart?add=1&amp;id_product=45&amp;token=a16a0480b8c47eff2101b6fd2fd87d65" rel="nofollow" title="A&ntilde;adir al carrito" data-id-product-attribute="0" data-id-product="45"
+                                                    data-minimal_quantity="1"> <span>A&ntilde;adir al carrito</span> </a>
+                                                <a class="button lnk_view btn btn-default" href="http://www.ctu-ideas.com/presta/con-estilo/45-organizador-de-cartera-x-2.html" title="Ver"> <span>Ver</span> </a>
+                                            </div>
+                                            <div class="product-flags"></div> <span class="availability"> <span class=" label-success"> Disponible </span> </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="ajax_block_product col-xs-12 col-sm-4 col-md-3 first-in-line last-line last-item-of-tablet-line first-item-of-mobile-line">
+                                    <div class="product-container" itemscope itemtype="https://schema.org/Product">
+                                        <div class="left-block">
+                                            <div class="product-image-container">
+                                                <a class="product_img_link" href="http://www.ctu-ideas.com/presta/con-estilo/31-organizador-de-cartera.html" title="Organizador de cartera." itemprop="url"> <img class="replace-2x img-responsive" src="http://www.ctu-ideas.com/presta/81-home_default/organizador-de-cartera.jpg" alt="Organizador de cartera." title="Organizador de cartera." width="250" height="250"
+                                                        itemprop="image" /> </a>
+                                                <div class="quick-view-wrapper-mobile">
+                                                    <a class="quick-view-mobile" href="http://www.ctu-ideas.com/presta/con-estilo/31-organizador-de-cartera.html" rel="http://www.ctu-ideas.com/presta/con-estilo/31-organizador-de-cartera.html"> <i class="icon-eye-open"></i> </a>
+                                                </div>
+                                                <a class="quick-view" href="http://www.ctu-ideas.com/presta/con-estilo/31-organizador-de-cartera.html" rel="http://www.ctu-ideas.com/presta/con-estilo/31-organizador-de-cartera.html"> <span>Vista r&aacute;pida</span> </a>
+                                                <div class="content_price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"> <span itemprop="price" class="price product-price"> $ 32.500 </span>
+                                                    <meta itemprop="priceCurrency" content="COP" /> <span class="unvisible"><link itemprop="availability" href="https://schema.org/InStock" />Disponible </span></div>
+                                            </div>
+                                        </div>
+                                        <div class="right-block">
+                                            <h5 itemprop="name"> <a class="product-name" href="http://www.ctu-ideas.com/presta/con-estilo/31-organizador-de-cartera.html" title="Organizador de cartera." itemprop="url"> Organizador de cartera. </a></h5>
+                                            <p class="product-desc" itemprop="description"> Organizador de Cartera</p>
+                                            <div class="content_price"> <span class="price product-price"> $ 32.500 </span></div>
+                                            <div class="button-container">
+                                                <a class="button ajax_add_to_cart_button btn btn-default" href="http://www.ctu-ideas.com/presta/cart?add=1&amp;id_product=31&amp;token=a16a0480b8c47eff2101b6fd2fd87d65" rel="nofollow" title="A&ntilde;adir al carrito" data-id-product-attribute="0" data-id-product="31"
+                                                    data-minimal_quantity="1"> <span>A&ntilde;adir al carrito</span> </a>
+                                                <a class="button lnk_view btn btn-default" href="http://www.ctu-ideas.com/presta/con-estilo/31-organizador-de-cartera.html" title="Ver"> <span>Ver</span> </a>
+                                            </div>
+                                            <div class="product-flags"></div> <span class="availability"> <span class=" label-success"> Disponible </span> </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="ajax_block_product col-xs-12 col-sm-4 col-md-3 last-line first-item-of-tablet-line last-item-of-mobile-line">
+                                    <div class="product-container" itemscope itemtype="https://schema.org/Product">
+                                        <div class="left-block">
+                                            <div class="product-image-container">
+                                                <a class="product_img_link" href="http://www.ctu-ideas.com/presta/con-estilo/47-espejo-de-bolsillo-diseno-gafas.html" title="Espejo de bolsillo, diseño gafas." itemprop="url"> <img class="replace-2x img-responsive" src="http://www.ctu-ideas.com/presta/136-home_default/espejo-de-bolsillo-diseno-gafas.jpg" alt="Espejo de bolsillo, diseño gafas." title="Espejo de bolsillo, diseño gafas."
+                                                        width="250" height="250" itemprop="image" /> </a>
+                                                <div class="quick-view-wrapper-mobile">
+                                                    <a class="quick-view-mobile" href="http://www.ctu-ideas.com/presta/con-estilo/47-espejo-de-bolsillo-diseno-gafas.html" rel="http://www.ctu-ideas.com/presta/con-estilo/47-espejo-de-bolsillo-diseno-gafas.html">
+                                                        <i class="icon-eye-open"></i> </a>
+                                                </div>
+                                                <a class="quick-view" href="http://www.ctu-ideas.com/presta/con-estilo/47-espejo-de-bolsillo-diseno-gafas.html" rel="http://www.ctu-ideas.com/presta/con-estilo/47-espejo-de-bolsillo-diseno-gafas.html"> <span>Vista r&aacute;pida</span> </a>
+                                                <div class="content_price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"> <span itemprop="price" class="price product-price"> $ 19.000 </span>
+                                                    <meta itemprop="priceCurrency" content="COP" /> <span class="unvisible"><link itemprop="availability" href="https://schema.org/InStock" />Disponible </span></div>
+                                            </div>
+                                        </div>
+                                        <div class="right-block">
+                                            <h5 itemprop="name"> <a class="product-name" href="http://www.ctu-ideas.com/presta/con-estilo/47-espejo-de-bolsillo-diseno-gafas.html" title="Espejo de bolsillo, diseño gafas." itemprop="url"> Espejo de bolsillo, diseño gafas. </a></h5>
+                                            <p class="product-desc" itemprop="description"> Espejo de bolsillo en silicona, con forma de gafas.</p>
+                                            <div class="content_price"> <span class="price product-price"> $ 19.000 </span></div>
+                                            <div class="button-container">
+                                                <a class="button ajax_add_to_cart_button btn btn-default" href="http://www.ctu-ideas.com/presta/cart?add=1&amp;id_product=47&amp;ipa=20568&amp;token=a16a0480b8c47eff2101b6fd2fd87d65" rel="nofollow" title="A&ntilde;adir al carrito" data-id-product-attribute="20568"
+                                                    data-id-product="47" data-minimal_quantity="1"> <span>A&ntilde;adir al carrito</span> </a>
+                                                <a class="button lnk_view btn btn-default" href="http://www.ctu-ideas.com/presta/con-estilo/47-espejo-de-bolsillo-diseno-gafas.html" title="Ver"> <span>Ver</span> </a>
+                                            </div>
+                                            <div class="product-flags"></div> <span class="availability"> <span class=" label-success"> Disponible </span> </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="ajax_block_product col-xs-12 col-sm-4 col-md-3 last-line first-item-of-mobile-line last-mobile-line">
+                                    <div class="product-container" itemscope itemtype="https://schema.org/Product">
+                                        <div class="left-block">
+                                            <div class="product-image-container">
+                                                <a class="product_img_link" href="http://www.ctu-ideas.com/presta/con-estilo/27-hickies-no-vuelvas-a-amarrarte.html" title="HICKIES®, no vuelvas a amarrarte" itemprop="url"> <img class="replace-2x img-responsive" src="http://www.ctu-ideas.com/presta/123-home_default/hickies-no-vuelvas-a-amarrarte.jpg" alt="HICKIES, evoluciona los cordones." title="HICKIES, evoluciona los cordones."
+                                                        width="250" height="250" itemprop="image" /> </a>
+                                                <div class="quick-view-wrapper-mobile">
+                                                    <a class="quick-view-mobile" href="http://www.ctu-ideas.com/presta/con-estilo/27-hickies-no-vuelvas-a-amarrarte.html" rel="http://www.ctu-ideas.com/presta/con-estilo/27-hickies-no-vuelvas-a-amarrarte.html">
+                                                        <i class="icon-eye-open"></i> </a>
+                                                </div>
+                                                <a class="quick-view" href="http://www.ctu-ideas.com/presta/con-estilo/27-hickies-no-vuelvas-a-amarrarte.html" rel="http://www.ctu-ideas.com/presta/con-estilo/27-hickies-no-vuelvas-a-amarrarte.html"> <span>Vista r&aacute;pida</span> </a>
+                                                <div class="content_price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"> <span itemprop="price" class="price product-price"> $ 47.000 </span>
+                                                    <meta itemprop="priceCurrency" content="COP" /> <span class="unvisible"><link itemprop="availability" href="https://schema.org/InStock" />Disponible </span></div>
+                                            </div>
+                                        </div>
+                                        <div class="right-block">
+                                            <h5 itemprop="name"> <a class="product-name" href="http://www.ctu-ideas.com/presta/con-estilo/27-hickies-no-vuelvas-a-amarrarte.html" title="HICKIES®, no vuelvas a amarrarte" itemprop="url"> HICKIES®, no vuelvas a amarrarte </a></h5>
+                                            <p class="product-desc" itemprop="description"> HICKIES®,&nbsp;la evolución de los cordones que responde al movimiento de tus pies; te permite calzarte sin tener que atar ni desatar. Provee confort, estabilidad y seguridad para que sigas moviéndote.</p>
+                                            <div class="content_price"> <span class="price product-price"> $ 47.000 </span></div>
+                                            <div class="button-container">
+                                                <a class="button ajax_add_to_cart_button btn btn-default" href="http://www.ctu-ideas.com/presta/cart?add=1&amp;id_product=27&amp;ipa=20535&amp;token=a16a0480b8c47eff2101b6fd2fd87d65" rel="nofollow" title="A&ntilde;adir al carrito" data-id-product-attribute="20535"
+                                                    data-id-product="27" data-minimal_quantity="1"> <span>A&ntilde;adir al carrito</span> </a>
+                                                <a class="button lnk_view btn btn-default" href="http://www.ctu-ideas.com/presta/con-estilo/27-hickies-no-vuelvas-a-amarrarte.html" title="Ver"> <span>Ver</span> </a>
+                                            </div>
+                                            <div class="product-flags"></div> <span class="availability"> <span class=" label-success"> Disponible </span> </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="ajax_block_product col-xs-12 col-sm-4 col-md-3 last-in-line last-line last-item-of-tablet-line last-item-of-mobile-line last-mobile-line">
+                                    <div class="product-container" itemscope itemtype="https://schema.org/Product">
+                                        <div class="left-block">
+                                            <div class="product-image-container">
+                                                <a class="product_img_link" href="http://www.ctu-ideas.com/presta/de-casa/14-cenicero-con-diseno-bola-de-billar-no-8.html" title="Cenicero con diseño bola de billar No. 8." itemprop="url"> <img class="replace-2x img-responsive" src="http://www.ctu-ideas.com/presta/35-home_default/cenicero-con-diseno-bola-de-billar-no-8.jpg" alt="Cenicero con diseño bola de billar No. 8." title="Cenicero con diseño bola de billar No. 8."
+                                                        width="250" height="250" itemprop="image" /> </a>
+                                                <div class="quick-view-wrapper-mobile">
+                                                    <a class="quick-view-mobile" href="http://www.ctu-ideas.com/presta/de-casa/14-cenicero-con-diseno-bola-de-billar-no-8.html" rel="http://www.ctu-ideas.com/presta/de-casa/14-cenicero-con-diseno-bola-de-billar-no-8.html">
+                                                        <i class="icon-eye-open"></i> </a>
+                                                </div>
+                                                <a class="quick-view" href="http://www.ctu-ideas.com/presta/de-casa/14-cenicero-con-diseno-bola-de-billar-no-8.html" rel="http://www.ctu-ideas.com/presta/de-casa/14-cenicero-con-diseno-bola-de-billar-no-8.html">
+                                                    <span>Vista r&aacute;pida</span> </a>
+                                                <div class="content_price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"> <span itemprop="price" class="price product-price"> $ 38.000 </span>
+                                                    <meta itemprop="priceCurrency" content="COP" /> <span class="unvisible"><link itemprop="availability" href="https://schema.org/InStock" />Disponible </span></div>
+                                            </div>
+                                        </div>
+                                        <div class="right-block">
+                                            <h5 itemprop="name"> <a class="product-name" href="http://www.ctu-ideas.com/presta/de-casa/14-cenicero-con-diseno-bola-de-billar-no-8.html" title="Cenicero con diseño bola de billar No. 8." itemprop="url"> Cenicero con diseño bola de billar No. 8. </a></h5>
+                                            <p class="product-desc" itemprop="description"> Cenicero en forma de bola de billar No. 8, con tapa para que no se salgan los olores.&nbsp;</p>
+                                            <div class="content_price"> <span class="price product-price"> $ 38.000 </span></div>
+                                            <div class="button-container">
+                                                <a class="button ajax_add_to_cart_button btn btn-default" href="http://www.ctu-ideas.com/presta/cart?add=1&amp;id_product=14&amp;token=a16a0480b8c47eff2101b6fd2fd87d65" rel="nofollow" title="A&ntilde;adir al carrito" data-id-product-attribute="0" data-id-product="14"
+                                                    data-minimal_quantity="1"> <span>A&ntilde;adir al carrito</span> </a>
+                                                <a class="button lnk_view btn btn-default" href="http://www.ctu-ideas.com/presta/de-casa/14-cenicero-con-diseno-bola-de-billar-no-8.html" title="Ver"> <span>Ver</span> </a>
+                                            </div>
+                                            <div class="product-flags"></div> <span class="availability"> <span class=" label-success"> Disponible </span> </span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul id="blockbestsellers" class="product_list grid row blockbestsellers tab-pane">
+                                <li class="ajax_block_product col-xs-12 col-sm-4 col-md-3 first-in-line first-item-of-tablet-line first-item-of-mobile-line">
+                                    <div class="product-container" itemscope itemtype="https://schema.org/Product">
+                                        <div class="left-block">
+                                            <div class="product-image-container">
+                                                <a class="product_img_link" href="http://www.ctu-ideas.com/presta/de-papel/18-tijeras-diseno-de-cocodrilo.html" title="Tijeras, diseño de Cocodrilo." itemprop="url"> <img class="replace-2x img-responsive" src="http://www.ctu-ideas.com/presta/51-home_default/tijeras-diseno-de-cocodrilo.jpg" alt="Tijeras, diseño de Cocodrilo." title="Tijeras, diseño de Cocodrilo." width="250"
+                                                        height="250" itemprop="image" /> </a>
+                                                <div class="quick-view-wrapper-mobile">
+                                                    <a class="quick-view-mobile" href="http://www.ctu-ideas.com/presta/de-papel/18-tijeras-diseno-de-cocodrilo.html" rel="http://www.ctu-ideas.com/presta/de-papel/18-tijeras-diseno-de-cocodrilo.html"> <i class="icon-eye-open"></i> </a>
+                                                </div>
+                                                <a class="quick-view" href="http://www.ctu-ideas.com/presta/de-papel/18-tijeras-diseno-de-cocodrilo.html" rel="http://www.ctu-ideas.com/presta/de-papel/18-tijeras-diseno-de-cocodrilo.html"> <span>Vista r&aacute;pida</span> </a>
+                                                <div class="content_price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"> <span itemprop="price" class="price product-price"> $ 10.000 </span>
+                                                    <meta itemprop="priceCurrency" content="COP" /> <span class="unvisible"><link itemprop="availability" href="https://schema.org/OutOfStock" />Agotado </span></div>
+                                            </div>
+                                        </div>
+                                        <div class="right-block">
+                                            <h5 itemprop="name"> <a class="product-name" href="http://www.ctu-ideas.com/presta/de-papel/18-tijeras-diseno-de-cocodrilo.html" title="Tijeras, diseño de Cocodrilo." itemprop="url"> Tijeras, diseño de Cocodrilo. </a></h5>
+                                            <p class="product-desc" itemprop="description"> Tijeras con forma de cocodrilo, con estuche para protección.</p>
+                                            <div class="content_price"> <span class="price product-price"> $ 10.000 </span></div>
+                                            <div class="button-container"> <span class="button ajax_add_to_cart_button btn btn-default disabled"> <span>A&ntilde;adir al carrito</span> </span>
+                                                <a class="button lnk_view btn btn-default" href="http://www.ctu-ideas.com/presta/de-papel/18-tijeras-diseno-de-cocodrilo.html" title="Ver"> <span>Ver</span> </a>
+                                            </div>
+                                            <div class="product-flags"></div> <span class="availability"> <span class="label-danger"> Agotado </span> </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="ajax_block_product col-xs-12 col-sm-4 col-md-3 last-item-of-mobile-line">
+                                    <div class="product-container" itemscope itemtype="https://schema.org/Product">
+                                        <div class="left-block">
+                                            <div class="product-image-container">
+                                                <a class="product_img_link" href="http://www.ctu-ideas.com/presta/con-estilo/50-guarda-cable-diseno-smile.html" title="Guarda cable, diseño Carita feliz." itemprop="url"> <img class="replace-2x img-responsive" src="http://www.ctu-ideas.com/presta/142-home_default/guarda-cable-diseno-smile.jpg" alt="Guarda cable, diseño Carita feliz." title="Guarda cable, diseño Carita feliz."
+                                                        width="250" height="250" itemprop="image" /> </a>
+                                                <div class="quick-view-wrapper-mobile">
+                                                    <a class="quick-view-mobile" href="http://www.ctu-ideas.com/presta/con-estilo/50-guarda-cable-diseno-smile.html" rel="http://www.ctu-ideas.com/presta/con-estilo/50-guarda-cable-diseno-smile.html"> <i class="icon-eye-open"></i> </a>
+                                                </div>
+                                                <a class="quick-view" href="http://www.ctu-ideas.com/presta/con-estilo/50-guarda-cable-diseno-smile.html" rel="http://www.ctu-ideas.com/presta/con-estilo/50-guarda-cable-diseno-smile.html"> <span>Vista r&aacute;pida</span> </a>
+                                                <div class="content_price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"> <span itemprop="price" class="price product-price"> $ 6.000 </span>
+                                                    <meta itemprop="priceCurrency" content="COP" /> <span class="unvisible"><link itemprop="availability" href="https://schema.org/InStock" />En stock </span></div>
+                                            </div>
+                                        </div>
+                                        <div class="right-block">
+                                            <h5 itemprop="name"> <a class="product-name" href="http://www.ctu-ideas.com/presta/con-estilo/50-guarda-cable-diseno-smile.html" title="Guarda cable, diseño Carita feliz." itemprop="url"> Guarda cable, diseño Carita feliz. </a></h5>
+                                            <p class="product-desc" itemprop="description"> Recoge cable carita feliz, especial para audífonos. Set x 2 unidades.</p>
+                                            <div class="content_price"> <span class="price product-price"> $ 6.000 </span></div>
+                                            <div class="button-container">
+                                                <a class="button ajax_add_to_cart_button btn btn-default" href="http://www.ctu-ideas.com/presta/cart?add=1&amp;id_product=50&amp;token=a16a0480b8c47eff2101b6fd2fd87d65" rel="nofollow" title="A&ntilde;adir al carrito" data-id-product-attribute="0" data-id-product="50"
+                                                    data-minimal_quantity="1"> <span>A&ntilde;adir al carrito</span> </a>
+                                                <a class="button lnk_view btn btn-default" href="http://www.ctu-ideas.com/presta/con-estilo/50-guarda-cable-diseno-smile.html" title="Ver"> <span>Ver</span> </a>
+                                            </div>
+                                            <div class="product-flags"></div> <span class="availability"> <span class=" label-success"> En stock </span> </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="ajax_block_product col-xs-12 col-sm-4 col-md-3 last-item-of-tablet-line first-item-of-mobile-line">
+                                    <div class="product-container" itemscope itemtype="https://schema.org/Product">
+                                        <div class="left-block">
+                                            <div class="product-image-container">
+                                                <a class="product_img_link" href="http://www.ctu-ideas.com/presta/con-estilo/42-llavero-con-diseno-de-gato.html" title="Llavero con diseño de gato." itemprop="url"> <img class="replace-2x img-responsive" src="http://www.ctu-ideas.com/presta/126-home_default/llavero-con-diseno-de-gato.jpg" alt="Llavero con diseño de gato." title="Llavero con diseño de gato." width="250"
+                                                        height="250" itemprop="image" /> </a>
+                                                <div class="quick-view-wrapper-mobile">
+                                                    <a class="quick-view-mobile" href="http://www.ctu-ideas.com/presta/con-estilo/42-llavero-con-diseno-de-gato.html" rel="http://www.ctu-ideas.com/presta/con-estilo/42-llavero-con-diseno-de-gato.html"> <i class="icon-eye-open"></i> </a>
+                                                </div>
+                                                <a class="quick-view" href="http://www.ctu-ideas.com/presta/con-estilo/42-llavero-con-diseno-de-gato.html" rel="http://www.ctu-ideas.com/presta/con-estilo/42-llavero-con-diseno-de-gato.html"> <span>Vista r&aacute;pida</span> </a>
+                                                <div class="content_price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"> <span itemprop="price" class="price product-price"> $ 20.000 </span>
+                                                    <meta itemprop="priceCurrency" content="COP" /> <span class="unvisible"><link itemprop="availability" href="https://schema.org/InStock" />En stock </span></div>
+                                            </div>
+                                        </div>
+                                        <div class="right-block">
+                                            <h5 itemprop="name"> <a class="product-name" href="http://www.ctu-ideas.com/presta/con-estilo/42-llavero-con-diseno-de-gato.html" title="Llavero con diseño de gato." itemprop="url"> Llavero con diseño de gato. </a></h5>
+                                            <p class="product-desc" itemprop="description"> Llavero en forma de gato, con sonido.</p>
+                                            <div class="content_price"> <span class="price product-price"> $ 20.000 </span></div>
+                                            <div class="button-container">
+                                                <a class="button ajax_add_to_cart_button btn btn-default" href="http://www.ctu-ideas.com/presta/cart?add=1&amp;id_product=42&amp;ipa=20564&amp;token=a16a0480b8c47eff2101b6fd2fd87d65" rel="nofollow" title="A&ntilde;adir al carrito" data-id-product-attribute="20564"
+                                                    data-id-product="42" data-minimal_quantity="1"> <span>A&ntilde;adir al carrito</span> </a>
+                                                <a class="button lnk_view btn btn-default" href="http://www.ctu-ideas.com/presta/con-estilo/42-llavero-con-diseno-de-gato.html" title="Ver"> <span>Ver</span> </a>
+                                            </div>
+                                            <div class="product-flags"></div> <span class="availability"> <span class=" label-success"> En stock </span> </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="ajax_block_product col-xs-12 col-sm-4 col-md-3 last-in-line first-item-of-tablet-line last-item-of-mobile-line">
+                                    <div class="product-container" itemscope itemtype="https://schema.org/Product">
+                                        <div class="left-block">
+                                            <div class="product-image-container">
+                                                <a class="product_img_link" href="http://www.ctu-ideas.com/presta/de-casa/37-calendario-magnetico.html" title="Calendario Magnético" itemprop="url"> <img class="replace-2x img-responsive" src="http://www.ctu-ideas.com/presta/108-home_default/calendario-magnetico.jpg" alt="Imán para la nevera con diseño calendario." title="Imán para la nevera con diseño calendario."
+                                                        width="250" height="250" itemprop="image" /> </a>
+                                                <div class="quick-view-wrapper-mobile">
+                                                    <a class="quick-view-mobile" href="http://www.ctu-ideas.com/presta/de-casa/37-calendario-magnetico.html" rel="http://www.ctu-ideas.com/presta/de-casa/37-calendario-magnetico.html"> <i class="icon-eye-open"></i> </a>
+                                                </div>
+                                                <a class="quick-view" href="http://www.ctu-ideas.com/presta/de-casa/37-calendario-magnetico.html" rel="http://www.ctu-ideas.com/presta/de-casa/37-calendario-magnetico.html"> <span>Vista r&aacute;pida</span> </a>
+                                                <div class="content_price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"> <span itemprop="price" class="price product-price"> $ 35.000 </span>
+                                                    <meta itemprop="priceCurrency" content="COP" /> <span class="unvisible"><link itemprop="availability" href="https://schema.org/InStock" />En stock </span></div>
+                                            </div>
+                                        </div>
+                                        <div class="right-block">
+                                            <h5 itemprop="name"> <a class="product-name" href="http://www.ctu-ideas.com/presta/de-casa/37-calendario-magnetico.html" title="Calendario Magnético" itemprop="url"> Calendario Magnético </a></h5>
+                                            <p class="product-desc" itemprop="description">
+                                                Imán para la nevera con forma de calendario para tener al día todas las actividades del mes. Incluye marcador borrable.</p>
+                                            <div class="content_price"> <span class="price product-price"> $ 35.000 </span></div>
+                                            <div class="button-container">
+                                                <a class="button ajax_add_to_cart_button btn btn-default" href="http://www.ctu-ideas.com/presta/cart?add=1&amp;id_product=37&amp;token=a16a0480b8c47eff2101b6fd2fd87d65" rel="nofollow" title="A&ntilde;adir al carrito" data-id-product-attribute="0" data-id-product="37"
+                                                    data-minimal_quantity="1"> <span>A&ntilde;adir al carrito</span> </a>
+                                                <a class="button lnk_view btn btn-default" href="http://www.ctu-ideas.com/presta/de-casa/37-calendario-magnetico.html" title="Ver"> <span>Ver</span> </a>
+                                            </div>
+                                            <div class="product-flags"></div> <span class="availability"> <span class=" label-success"> En stock </span> </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="ajax_block_product col-xs-12 col-sm-4 col-md-3 first-in-line first-item-of-mobile-line">
+                                    <div class="product-container" itemscope itemtype="https://schema.org/Product">
+                                        <div class="left-block">
+                                            <div class="product-image-container">
+                                                <a class="product_img_link" href="http://www.ctu-ideas.com/presta/con-estilo/31-organizador-de-cartera.html" title="Organizador de cartera." itemprop="url"> <img class="replace-2x img-responsive" src="http://www.ctu-ideas.com/presta/81-home_default/organizador-de-cartera.jpg" alt="Organizador de cartera." title="Organizador de cartera." width="250" height="250"
+                                                        itemprop="image" /> </a>
+                                                <div class="quick-view-wrapper-mobile">
+                                                    <a class="quick-view-mobile" href="http://www.ctu-ideas.com/presta/con-estilo/31-organizador-de-cartera.html" rel="http://www.ctu-ideas.com/presta/con-estilo/31-organizador-de-cartera.html"> <i class="icon-eye-open"></i> </a>
+                                                </div>
+                                                <a class="quick-view" href="http://www.ctu-ideas.com/presta/con-estilo/31-organizador-de-cartera.html" rel="http://www.ctu-ideas.com/presta/con-estilo/31-organizador-de-cartera.html"> <span>Vista r&aacute;pida</span> </a>
+                                                <div class="content_price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"> <span itemprop="price" class="price product-price"> $ 32.500 </span>
+                                                    <meta itemprop="priceCurrency" content="COP" /> <span class="unvisible"><link itemprop="availability" href="https://schema.org/InStock" />En stock </span></div>
+                                            </div>
+                                        </div>
+                                        <div class="right-block">
+                                            <h5 itemprop="name"> <a class="product-name" href="http://www.ctu-ideas.com/presta/con-estilo/31-organizador-de-cartera.html" title="Organizador de cartera." itemprop="url"> Organizador de cartera. </a></h5>
+                                            <p class="product-desc" itemprop="description">
+                                                Organizador de Cartera</p>
+                                            <div class="content_price"> <span class="price product-price"> $ 32.500 </span></div>
+                                            <div class="button-container">
+                                                <a class="button ajax_add_to_cart_button btn btn-default" href="http://www.ctu-ideas.com/presta/cart?add=1&amp;id_product=31&amp;token=a16a0480b8c47eff2101b6fd2fd87d65" rel="nofollow" title="A&ntilde;adir al carrito" data-id-product-attribute="0" data-id-product="31"
+                                                    data-minimal_quantity="1"> <span>A&ntilde;adir al carrito</span> </a>
+                                                <a class="button lnk_view btn btn-default" href="http://www.ctu-ideas.com/presta/con-estilo/31-organizador-de-cartera.html" title="Ver"> <span>Ver</span> </a>
+                                            </div>
+                                            <div class="product-flags"></div> <span class="availability"> <span class=" label-success"> En stock </span> </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="ajax_block_product col-xs-12 col-sm-4 col-md-3 last-item-of-tablet-line last-item-of-mobile-line">
+                                    <div class="product-container" itemscope itemtype="https://schema.org/Product">
+                                        <div class="left-block">
+                                            <div class="product-image-container">
+                                                <a class="product_img_link" href="http://www.ctu-ideas.com/presta/de-casa/13-perro-recoge-migas.html" title="Perro recoge-migas." itemprop="url"> <img class="replace-2x img-responsive" src="http://www.ctu-ideas.com/presta/33-home_default/perro-recoge-migas.jpg" alt="Perro recoge-migas." title="Perro recoge-migas." width="250" height="250" itemprop="image"
+                                                    /> </a>
+                                                <div class="quick-view-wrapper-mobile">
+                                                    <a class="quick-view-mobile" href="http://www.ctu-ideas.com/presta/de-casa/13-perro-recoge-migas.html" rel="http://www.ctu-ideas.com/presta/de-casa/13-perro-recoge-migas.html"> <i class="icon-eye-open"></i> </a>
+                                                </div>
+                                                <a class="quick-view" href="http://www.ctu-ideas.com/presta/de-casa/13-perro-recoge-migas.html" rel="http://www.ctu-ideas.com/presta/de-casa/13-perro-recoge-migas.html"> <span>Vista r&aacute;pida</span> </a>
+                                                <div class="content_price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"> <span itemprop="price" class="price product-price"> $ 44.900 </span>
+                                                    <meta itemprop="priceCurrency" content="COP" /> <span class="unvisible"><link itemprop="availability" href="https://schema.org/InStock" />En stock </span></div>
+                                            </div>
+                                        </div>
+                                        <div class="right-block">
+                                            <h5 itemprop="name"> <a class="product-name" href="http://www.ctu-ideas.com/presta/de-casa/13-perro-recoge-migas.html" title="Perro recoge-migas." itemprop="url"> Perro recoge-migas. </a></h5>
+                                            <p class="product-desc" itemprop="description">
+                                                Mini Aspiradora con diseño de Perro que recoge las migas pequeñas.</p>
+                                            <div class="content_price"> <span class="price product-price"> $ 44.900 </span></div>
+                                            <div class="button-container">
+                                                <a class="button ajax_add_to_cart_button btn btn-default" href="http://www.ctu-ideas.com/presta/cart?add=1&amp;id_product=13&amp;token=a16a0480b8c47eff2101b6fd2fd87d65" rel="nofollow" title="A&ntilde;adir al carrito" data-id-product-attribute="0" data-id-product="13"
+                                                    data-minimal_quantity="1"> <span>A&ntilde;adir al carrito</span> </a>
+                                                <a class="button lnk_view btn btn-default" href="http://www.ctu-ideas.com/presta/de-casa/13-perro-recoge-migas.html" title="Ver"> <span>Ver</span> </a>
+                                            </div>
+                                            <div class="product-flags"></div> <span class="availability"> <span class=" label-success"> En stock </span> </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="ajax_block_product col-xs-12 col-sm-4 col-md-3 first-item-of-tablet-line first-item-of-mobile-line">
+                                    <div class="product-container" itemscope itemtype="https://schema.org/Product">
+                                        <div class="left-block">
+                                            <div class="product-image-container">
+                                                <a class="product_img_link" href="http://www.ctu-ideas.com/presta/con-estilo/45-organizador-de-cartera-x-2.html" title="Organizador de cartera x 2." itemprop="url"> <img class="replace-2x img-responsive" src="http://www.ctu-ideas.com/presta/134-home_default/organizador-de-cartera-x-2.jpg" alt="Organizador de cartera." title="Organizador de cartera." width="250" height="250"
+                                                        itemprop="image" /> </a>
+                                                <div class="quick-view-wrapper-mobile">
+                                                    <a class="quick-view-mobile" href="http://www.ctu-ideas.com/presta/con-estilo/45-organizador-de-cartera-x-2.html" rel="http://www.ctu-ideas.com/presta/con-estilo/45-organizador-de-cartera-x-2.html"> <i class="icon-eye-open"></i> </a>
+                                                </div>
+                                                <a class="quick-view" href="http://www.ctu-ideas.com/presta/con-estilo/45-organizador-de-cartera-x-2.html" rel="http://www.ctu-ideas.com/presta/con-estilo/45-organizador-de-cartera-x-2.html"> <span>Vista r&aacute;pida</span> </a>
+                                                <div class="content_price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"> <span itemprop="price" class="price product-price"> $ 45.000 </span>
+                                                    <meta itemprop="priceCurrency" content="COP" /> <span class="unvisible"><link itemprop="availability" href="https://schema.org/InStock" />En stock </span></div>
+                                            </div>
+                                        </div>
+                                        <div class="right-block">
+                                            <h5 itemprop="name"> <a class="product-name" href="http://www.ctu-ideas.com/presta/con-estilo/45-organizador-de-cartera-x-2.html" title="Organizador de cartera x 2." itemprop="url"> Organizador de cartera x 2. </a></h5>
+                                            <p class="product-desc" itemprop="description"> Organizadores de cartera. Incluye 2 unidades de diferente tamaño; grande y mediano.</p>
+                                            <div class="content_price"> <span class="price product-price"> $ 45.000 </span></div>
+                                            <div class="button-container">
+                                                <a class="button ajax_add_to_cart_button btn btn-default" href="http://www.ctu-ideas.com/presta/cart?add=1&amp;id_product=45&amp;token=a16a0480b8c47eff2101b6fd2fd87d65" rel="nofollow" title="A&ntilde;adir al carrito" data-id-product-attribute="0" data-id-product="45"
+                                                    data-minimal_quantity="1"> <span>A&ntilde;adir al carrito</span> </a>
+                                                <a class="button lnk_view btn btn-default" href="http://www.ctu-ideas.com/presta/con-estilo/45-organizador-de-cartera-x-2.html" title="Ver"> <span>Ver</span> </a>
+                                            </div>
+                                            <div class="product-flags"></div> <span class="availability"> <span class=" label-success"> En stock </span> </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="ajax_block_product col-xs-12 col-sm-4 col-md-3 last-in-line last-item-of-mobile-line">
+                                    <div class="product-container" itemscope itemtype="https://schema.org/Product">
+                                        <div class="left-block">
+                                            <div class="product-image-container">
+                                                <a class="product_img_link" href="http://www.ctu-ideas.com/presta/con-estilo/40-pantuflas-diseno-bota-sport.html" title="Pantuflas, diseño bota sport." itemprop="url"> <img class="replace-2x img-responsive" src="http://www.ctu-ideas.com/presta/118-home_default/pantuflas-diseno-bota-sport.jpg" alt="Pantuflas, diseño bota sport." title="Pantuflas, diseño bota sport." width="250"
+                                                        height="250" itemprop="image" /> </a>
+                                                <div class="quick-view-wrapper-mobile">
+                                                    <a class="quick-view-mobile" href="http://www.ctu-ideas.com/presta/con-estilo/40-pantuflas-diseno-bota-sport.html" rel="http://www.ctu-ideas.com/presta/con-estilo/40-pantuflas-diseno-bota-sport.html"> <i class="icon-eye-open"></i> </a>
+                                                </div>
+                                                <a class="quick-view" href="http://www.ctu-ideas.com/presta/con-estilo/40-pantuflas-diseno-bota-sport.html" rel="http://www.ctu-ideas.com/presta/con-estilo/40-pantuflas-diseno-bota-sport.html"> <span>Vista r&aacute;pida</span> </a>
+                                                <div class="content_price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"> <span itemprop="price" class="price product-price"> $ 88.000 </span>
+                                                    <meta itemprop="priceCurrency" content="COP" /> <span class="unvisible"><link itemprop="availability" href="https://schema.org/InStock" />En stock </span></div>
+                                            </div>
+                                        </div>
+                                        <div class="right-block">
+                                            <h5 itemprop="name"> <a class="product-name" href="http://www.ctu-ideas.com/presta/con-estilo/40-pantuflas-diseno-bota-sport.html" title="Pantuflas, diseño bota sport." itemprop="url"> Pantuflas, diseño bota sport. </a></h5>
+                                            <p class="product-desc" itemprop="description"> Pantuflas con diseño de botas, ideal para estar cómodo en tu casa.</p>
+                                            <div class="content_price"> <span class="price product-price"> $ 88.000 </span></div>
+                                            <div class="button-container">
+                                                <a class="button ajax_add_to_cart_button btn btn-default" href="http://www.ctu-ideas.com/presta/cart?add=1&amp;id_product=40&amp;ipa=20559&amp;token=a16a0480b8c47eff2101b6fd2fd87d65" rel="nofollow" title="A&ntilde;adir al carrito" data-id-product-attribute="20559"
+                                                    data-id-product="40" data-minimal_quantity="1"> <span>A&ntilde;adir al carrito</span> </a>
+                                                <a class="button lnk_view btn btn-default" href="http://www.ctu-ideas.com/presta/con-estilo/40-pantuflas-diseno-bota-sport.html" title="Ver"> <span>Ver</span> </a>
+                                            </div>
+                                            <div class="product-flags"></div> <span class="availability"> <span class=" label-success"> En stock </span> </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="ajax_block_product col-xs-12 col-sm-4 col-md-3 first-in-line last-line last-item-of-tablet-line first-item-of-mobile-line last-mobile-line">
+                                    <div class="product-container" itemscope itemtype="https://schema.org/Product">
+                                        <div class="left-block">
+                                            <div class="product-image-container">
+                                                <a class="product_img_link" href="http://www.ctu-ideas.com/presta/de-casa/36-soporte-para-recipientes-calientes-con-diseno-de-mariquita.html" title="Soporte para recipientes calientes con diseño de mariquita." itemprop="url">
+                                                    <img class="replace-2x img-responsive" src="http://www.ctu-ideas.com/presta/103-home_default/soporte-para-recipientes-calientes-con-diseno-de-mariquita.jpg" alt="Soporte para recipientes calientes con diseño de mariquita." title="Soporte para recipientes calientes con diseño de mariquita."
+                                                        width="250" height="250" itemprop="image" /> </a>
+                                                <div class="quick-view-wrapper-mobile">
+                                                    <a class="quick-view-mobile" href="http://www.ctu-ideas.com/presta/de-casa/36-soporte-para-recipientes-calientes-con-diseno-de-mariquita.html" rel="http://www.ctu-ideas.com/presta/de-casa/36-soporte-para-recipientes-calientes-con-diseno-de-mariquita.html">
+                                                        <i class="icon-eye-open"></i> </a>
+                                                </div>
+                                                <a class="quick-view" href="http://www.ctu-ideas.com/presta/de-casa/36-soporte-para-recipientes-calientes-con-diseno-de-mariquita.html" rel="http://www.ctu-ideas.com/presta/de-casa/36-soporte-para-recipientes-calientes-con-diseno-de-mariquita.html">
+                                                    <span>Vista r&aacute;pida</span> </a>
+                                                <div class="content_price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"> <span itemprop="price" class="price product-price"> $ 40.000 </span>
+                                                    <meta itemprop="priceCurrency" content="COP" /> <span class="unvisible"><link itemprop="availability" href="https://schema.org/InStock" />En stock </span></div>
+                                            </div>
+                                        </div>
+                                        <div class="right-block">
+                                            <h5 itemprop="name"> <a class="product-name" href="http://www.ctu-ideas.com/presta/de-casa/36-soporte-para-recipientes-calientes-con-diseno-de-mariquita.html" title="Soporte para recipientes calientes con diseño de mariquita." itemprop="url"> Soporte para recipientes calientes con... </a></h5>
+                                            <p class="product-desc" itemprop="description"> Soporte en silicona en forma de mariquita, especial para proteger las mesas y manteles de los recipientes calientes.</p>
+                                            <div class="content_price"> <span class="price product-price"> $ 40.000 </span></div>
+                                            <div class="button-container">
+                                                <a class="button ajax_add_to_cart_button btn btn-default" href="http://www.ctu-ideas.com/presta/cart?add=1&amp;id_product=36&amp;token=a16a0480b8c47eff2101b6fd2fd87d65" rel="nofollow" title="A&ntilde;adir al carrito" data-id-product-attribute="0" data-id-product="36"
+                                                    data-minimal_quantity="1"> <span>A&ntilde;adir al carrito</span> </a>
+                                                <a class="button lnk_view btn btn-default" href="http://www.ctu-ideas.com/presta/de-casa/36-soporte-para-recipientes-calientes-con-diseno-de-mariquita.html" title="Ver">
+                                                    <span>Ver</span> </a>
+                                            </div>
+                                            <div class="product-flags"></div> <span class="availability"> <span class=" label-success"> En stock </span> </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="ajax_block_product col-xs-12 col-sm-4 col-md-3 last-line first-item-of-tablet-line last-item-of-mobile-line last-mobile-line">
+                                    <div class="product-container" itemscope itemtype="https://schema.org/Product">
+                                        <div class="left-block">
+                                            <div class="product-image-container">
+                                                <a class="product_img_link" href="http://www.ctu-ideas.com/presta/de-casa/30-salero-pimentero-y-palillero-con-diseno-de-perro.html" title="Salero, Pimentero y Palillero con diseño de Perro." itemprop="url"> <img class="replace-2x img-responsive" src="http://www.ctu-ideas.com/presta/79-home_default/salero-pimentero-y-palillero-con-diseno-de-perro.jpg" alt="Salero, Pimentero y Palillero con diseño de Perro."
+                                                        title="Salero, Pimentero y Palillero con diseño de Perro." width="250" height="250" itemprop="image" /> </a>
+                                                <div class="quick-view-wrapper-mobile">
+                                                    <a class="quick-view-mobile" href="http://www.ctu-ideas.com/presta/de-casa/30-salero-pimentero-y-palillero-con-diseno-de-perro.html" rel="http://www.ctu-ideas.com/presta/de-casa/30-salero-pimentero-y-palillero-con-diseno-de-perro.html">
+                                                        <i class="icon-eye-open"></i> </a>
+                                                </div>
+                                                <a class="quick-view" href="http://www.ctu-ideas.com/presta/de-casa/30-salero-pimentero-y-palillero-con-diseno-de-perro.html" rel="http://www.ctu-ideas.com/presta/de-casa/30-salero-pimentero-y-palillero-con-diseno-de-perro.html">
+                                                    <span>Vista r&aacute;pida</span> </a>
+                                                <div class="content_price" itemprop="offers" itemscope itemtype="https://schema.org/Offer"> <span itemprop="price" class="price product-price"> $ 27.000 </span>
+                                                    <meta itemprop="priceCurrency" content="COP" /> <span class="unvisible"><link itemprop="availability" href="https://schema.org/InStock" />En stock </span></div>
+                                            </div>
+                                        </div>
+                                        <div class="right-block">
+                                            <h5 itemprop="name"> <a class="product-name" href="http://www.ctu-ideas.com/presta/de-casa/30-salero-pimentero-y-palillero-con-diseno-de-perro.html" title="Salero, Pimentero y Palillero con diseño de Perro." itemprop="url"> Salero, Pimentero y Palillero con diseño... </a></h5>
+                                            <p class="product-desc" itemprop="description"> Salero, pimentero y palillero en acrílico, con diseño de perro, ideal para decorar tu mesa.</p>
+                                            <div class="content_price"> <span class="price product-price"> $ 27.000 </span></div>
+                                            <div class="button-container">
+                                                <a class="button ajax_add_to_cart_button btn btn-default" href="http://www.ctu-ideas.com/presta/cart?add=1&amp;id_product=30&amp;ipa=20544&amp;token=a16a0480b8c47eff2101b6fd2fd87d65" rel="nofollow" title="A&ntilde;adir al carrito" data-id-product-attribute="20544"
+                                                    data-id-product="30" data-minimal_quantity="1"> <span>A&ntilde;adir al carrito</span> </a>
+                                                <a class="button lnk_view btn btn-default" href="http://www.ctu-ideas.com/presta/de-casa/30-salero-pimentero-y-palillero-con-diseno-de-perro.html" title="Ver">
+                                                    <span>Ver</span> </a>
+                                            </div>
+                                            <div class="product-flags"></div> <span class="availability"> <span class=" label-success"> En stock </span> </span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-container">
+            <footer id="footer" class="container">
+                <div class="row">
+                    <div id="newsletter_block_left" class="block">
+                        <h4>Boletín</h4>
+                        <div class="block_content">
+                            <form action="//www.ctu-ideas.com/presta/" method="post">
+                                <div class="form-group"> <input class="inputNew form-control grey newsletter-input" id="newsletter-input" type="text" name="email" size="18" value="Suscríbete, envíanos tu e-mail" /> <button type="submit" name="submitNewsletter" class="btn btn-default button button-small"> <span>OK</span> </button>                                    <input type="hidden" name="action" value="0" /></div>
+                            </form>
+                        </div>
+                    </div>
+                    <section id="social_block" class="pull-right">
+                        <ul>
+                            <li class="facebook">
+                                <a class="_blank" href="https://www.facebook.com/ctuideas/"> <span>Facebook</span> </a>
+                            </li>
+                            <li class="instagram"> <i class="fa-instagram"> <a class="_blank" href="https://www.instagram.com/ctuideas/"> <span>Instagram</span> </a> </i></li>
+                        </ul>
+                        <h4>Síguenos</h4>
+                    </section>
+                    <div class="clearfix"></div>
+                    <section class="blockcategories_footer footer-block col-xs-12 col-sm-2">
+                        <h4>Categorías</h4>
+                        <div class="category_footer toggle-footer">
+                            <div class="list">
+                                <ul class="tree dhtml">
+                                    <li> <a href="http://www.ctu-ideas.com/presta/18-de-casa" title=""> De Casa </a></li>
+                                    <li> <a href="http://www.ctu-ideas.com/presta/19-con-estilo" title=""> Con Estilo </a></li>
+                                    <li> <a href="http://www.ctu-ideas.com/presta/20-de-papel" title=""> De Papel </a></li>
+                                    <li> <a href="http://www.ctu-ideas.com/presta/21-hecho-para-ti" title=""> Hecho para tí </a></li>
+                                    <li> <a href="http://www.ctu-ideas.com/presta/14-lo-nuevo" title="Ya llegaron, no te lo pierdas!"> Lo nuevo </a></li>
+                                    <li class="last"> <a href="http://www.ctu-ideas.com/presta/23-todo" title=""> Todo </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="footer-block col-xs-12 col-sm-2" id="block_various_links_footer">
+                        <h4>Información</h4>
+                        <ul class="toggle-footer">
+                            <li class="item"> <a href="http://www.ctu-ideas.com/presta/prices-drop" title="Promociones especiales"> Promociones especiales </a></li>
+                            <li class="item"> <a href="http://www.ctu-ideas.com/presta/new-products" title="Novedades"> Novedades </a></li>
+                            <li class="item"> <a href="http://www.ctu-ideas.com/presta/best-sales" title="¡Lo más vendido!"> ¡Lo más vendido! </a></li>
+                            <li class="item"> <a href="http://www.ctu-ideas.com/presta/contact-us" title="Contáctanos"> Contáctanos </a></li>
+                            <li class="item"> <a href="http://www.ctu-ideas.com/presta/content/4-nosotros" title="Nosotros"> Nosotros </a></li>
+                            <li class="item"> <a href="http://www.ctu-ideas.com/presta/content/2-preguntas-frecuetes" title="Preguntas Frecuentes"> Preguntas Frecuentes </a></li>
+                            <li class="item"> <a href="http://www.ctu-ideas.com/presta/content/3-terminos-y-condiciones-de-uso" title="Términos y condiciones de uso"> Términos y condiciones de uso </a></li>
+                            <li> <a href="http://www.ctu-ideas.com/presta/sitemap" title="Mapa del sitio"> Mapa del sitio </a></li>
+                        </ul>
+                    </section>
+                    <section id="block_contact_infos" class="footer-block col-xs-12 col-sm-4">
+                        <div>
+                            <h4>Información sobre la tienda</h4>
+                            <ul class="toggle-footer">
+                                <li> <i class="icon-map-marker"></i>C-tú Ideas, Bogotá, Colombia</li>
+                                <li> <i class="icon-phone"></i>Llámanos o escríbenos <span>(57) 3017830168</span></li>
+                                <li> <i class="icon-envelope-alt"></i>Email: <span><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%63%75%65%6e%74%61%6e%6f%73@%63%74%75-%69%64%65%61%73.%63%6f%6d" >&#x63;&#x75;&#x65;&#x6e;&#x74;&#x61;&#x6e;&#x6f;&#x73;&#x40;&#x63;&#x74;&#x75;&#x2d;&#x69;&#x64;&#x65;&#x61;&#x73;&#x2e;&#x63;&#x6f;&#x6d;</a></span></li>
+                            </ul>
+                        </div>
+                    </section>
+                    <div class="logoAdone">
+                        <a href="http://www.adone.com.co/" target="_blank"><img src="http://ingeconciviles.com.co/templates/ingeconcivilesinicio/img/logoAdone.png" alt="logoAdone.png" /></a>
+                    </div>
+                    <div style="padding: 13px;text-align: center;">
+                        <a href="http://www.adone.com.co/" target="_blank"><img src="http://ingeconciviles.com.co/templates/ingeconcivilesinicio/img/logoAdone.png"></a>
+                    </div>
+                </div>
+        </div>
+        </footer>
+    </div>
+    </div>
+    <script type="text/javascript">
+        /* <![CDATA[ */ ;
+        var CUSTOMIZE_TEXTFIELD = 1;
+        var FancyboxI18nClose = 'Cerrar';
+        var FancyboxI18nNext = 'Siguiente';
+        var FancyboxI18nPrev = 'Anterior';
+        var ajax_allowed = true;
+        var ajaxsearch = true;
+        var baseDir = 'http://www.ctu-ideas.com/presta/';
+        var baseUri = 'http://www.ctu-ideas.com/presta/';
+        var blocksearch_type = 'top';
+        var contentOnly = false;
+        var currency = {
+            "id": 2,
+            "name": "Peso",
+            "iso_code": "COP",
+            "iso_code_num": "170",
+            "sign": "$",
+            "blank": "1",
+            "conversion_rate": "1.000000",
+            "deleted": "0",
+            "format": "3",
+            "decimals": "0",
+            "active": "1",
+            "prefix": "$ ",
+            "suffix": "",
+            "id_shop_list": null,
+            "force_id": false
+        };
+        var currencyBlank = 1;
+        var currencyFormat = 3;
+        var currencyRate = 1;
+        var currencySign = '$';
+        var customizationIdMessage = 'Personalización n°';
+        var delete_txt = 'Eliminar';
+        var displayList = false;
+        var freeProductTranslation = '¡Gratis!';
+        var freeShippingTranslation = '¡Envío gratuito!';
+        var generated_date = 1646852597;
+        var hasDeliveryAddress = false;
+        var highDPI = false;
+        var homeslider_loop = 1;
+        var homeslider_pause = 5000;
+        var homeslider_speed = 1800;
+        var homeslider_width = 1169;
+        var id_lang = 2;
+        var img_dir = 'http://www.ctu-ideas.com/presta/themes/default-ctu/img/';
+        var instantsearch = false;
+        var isGuest = 0;
+        var isLogged = 0;
+        var isMobile = false;
+        var page_name = 'index';
+        var placeholder_blocknewsletter = 'Suscríbete, envíanos tu e-mail';
+        var priceDisplayMethod = 0;
+        var priceDisplayPrecision = 0;
+        var quickView = true;
+        var removingLinkText = 'Eliminar este producto de mi carrito';
+        var roundMode = 2;
+        var search_url = 'http://www.ctu-ideas.com/presta/search';
+        var static_token = 'a16a0480b8c47eff2101b6fd2fd87d65';
+        var toBeDetermined = 'A determinar';
+        var token = '52eab7015db877e22753fd76caf329aa';
+        var usingSecureMode = false; /* ]]> */
+    </script>
+    <script type="text/javascript" src="http://www.ctu-ideas.com/presta/themes/default-ctu/cache/v_91_72a9349ff4769e2d0d922a190fd44692.js"></script>
+    <script type="text/javascript">
+        /* <![CDATA[ */ ;
+        (window.gaDevIds = window.gaDevIds || []).push('d6YPbH');
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-101532695-1', 'auto');
+        ga('require', 'ec');;
+        ga('send', 'pageview'); /* ]]> */
+    </script>
+</body>
+
+</html>
